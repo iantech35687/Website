@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Servlets Hackathon - User Input Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Java Servlets Hackathon - User Input Form</h2>
+        <form id="userForm" method="post" action="process">
+            <!-- Text Input -->
+            <label for="text">Text Input:</label>
+            <input type="text" id="text" name="text" placeholder="Enter some text" required><br><br>
+
+            <!-- Name Input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <!-- Number Input -->
+            <label for="number">Age:</label>
+            <input type="number" id="number" name="number" min="1" max="100" placeholder="Enter your age" required><br><br>
+
+            <!-- Date and Time Input -->
+            <label for="datetime">Select Date and Time:</label>
+            <input type="datetime-local" id="datetime" name="datetime" required><br><br>
+
+            <!-- Checkbox Input -->
+            <label>Choose Your Interests:</label><br>
+            <input type="checkbox" id="interest1" name="interests" value="Coding">
+            <label for="interest1">Coding</label><br>
+            <input type="checkbox" id="interest2" name="interests" value="Reading">
+            <label for="interest2">Reading</label><br>
+            <input type="checkbox" id="interest3" name="interests" value="Sports">
+            <label for="interest3">Sports</label><br><br>
+
+            <!-- Radio Button Input -->
+            <label>Select Your Gender:</label><br>
+            <input type="radio" id="genderM" name="gender" value="Male" required>
+            <label for="genderM">Male</label><br>
+            <input type="radio" id="genderF" name="gender" value="Female">
+            <label for="genderF">Female</label><br>
+            <input type="radio" id="genderO" name="gender" value="Other">
+            <label for="genderO">Other</label><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
